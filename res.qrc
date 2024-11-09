@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/password.png</file>
+        <file>resource/user.png</file>
+        <file>resource/close.png</file>
+        <file>resource/min.png</file>
+        <file>resource/resize.png</file>
+        <file>resource/search.png</file>
+        <file>resource/down.png</file>
+        <file>resource/left.png</file>
+        <file>resource/remove.png</file>
+        <file>resource/add.png</file>
+        <file>resource/exam.png</file>
+        <file>resource/practice.png</file>
+        <file>resource/profile.png</file>
+        <file>resource/logo.png</file>
+        <file>resource/conclusion.png</file>
+        <file>resource/promanage.png</file>
+        <file>resource/upload.png</file>
+        <file>resource/usermanage.png</file>
+        <file>resource/edit.png</file>
+        <file>resource/addUser.png</file>
+    </qresource>
+</RCC>

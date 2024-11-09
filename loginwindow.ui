@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QDialog" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,5">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: #2D42B7;</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="rightMargin">
+       <number>18</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/resource/logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>C语言练习系统</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_close">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>×</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0,0,0,0,0,1,0,1,0,1,0">
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2473A8;</string>
+              </property>
+              <property name="text">
+               <string>Usename</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_4" native="true">
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QWidget #widget_4{
+	border: 1px solid rgb(148, 148, 148);
+	border-radius: 3px;
+}</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/resource/user.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="margin">
+                  <number>4</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="comboBox_loginAccount">
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox {
+	border: none;
+}
+
+QComboBox::drop-down {
+	border: none;
+}
+
+QComboBox::down-arrow {
+	image: url(:/resource/down.png);
+	width: 15px;
+	height: 15px;
+}</string>
+                 </property>
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>请输入账号</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #2473A8;</string>
+              </property>
+              <property name="text">
+               <string>Password</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">QWidget #widget_3{
+	border: 1px solid rgb(148, 148, 148);
+	border-radius: 3px;
+}</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="res.qrc">:/resource/password.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_loginPassword">
+                 <property name="minimumSize">
+                  <size>
+                   <width>250</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border: none;</string>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>请输入密码</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QCheckBox" name="checkBox">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(34, 111, 162);</string>
+                </property>
+                <property name="text">
+                 <string>记住密码</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_updatePassword">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border:none;
+color: #226FA2;</string>
+                </property>
+                <property name="text">
+                 <string>修改密码</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_login">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: #ffffff;
+	background-color: #226FA2;
+	border: none;
+	border-radius: 6px;
+}</string>
+              </property>
+              <property name="text">
+               <string>登    录</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_gotoRegister">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: #226FA1;
+	background-color: rgb(230, 230, 230);
+	border: none;
+	border-radius: 6px;
+}</string>
+              </property>
+              <property name="text">
+               <string>注    册</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_5" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0,0,0,0,0,1,0,1,0">
+               <property name="spacing">
+                <number>5</number>
+               </property>
+               <item>
+                <spacer name="verticalSpacer_11">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_12">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #2473A8;</string>
+                 </property>
+                 <property name="text">
+                  <string>Usename</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_6" native="true">
+                 <property name="font">
+                  <font>
+                   <family>Microsoft YaHei</family>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QWidget #widget_6{
+	border: 1px solid rgb(148, 148, 148);
+	border-radius: 3px;
+}</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_regAccount">
+                    <property name="minimumSize">
+                     <size>
+                      <width>250</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>9</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border: none;</string>
+                    </property>
+                    <property name="placeholderText">
+                     <string>请输入账号</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="res.qrc">:/resource/user.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                    <property name="margin">
+                     <number>4</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_12">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>10</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_14">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #2473A8;</string>
+                 </property>
+                 <property name="text">
+                  <string>Password</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_7" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget #widget_7{
+	border: 1px solid rgb(148, 148, 148);
+	border-radius: 3px;
+}</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_regPassword">
+                    <property name="minimumSize">
+                     <size>
+                      <width>250</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>9</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border: none;</string>
+                    </property>
+                    <property name="echoMode">
+                     <enum>QLineEdit::Password</enum>
+                    </property>
+                    <property name="placeholderText">
+                     <string>请输入密码</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_15">
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="res.qrc">:/resource/password.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_13">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>10</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_14">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>10</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_register">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	color: #ffffff;
+	background-color: #226FA2;
+	border: none;
+	border-radius: 6px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>注    册</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_15">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>10</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_returnLogin">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	color: #226FA1;
+	background-color: rgb(230, 230, 230);
+	border: none;
+	border-radius: 6px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>返    回</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_16">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_8" native="true">
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEdit_newPassword">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="echoMode">
+                <enum>QLineEdit::Password</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>请输入旧密码：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_oldPassword">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="echoMode">
+                <enum>QLineEdit::Password</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>请输入新密码：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="2">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QPushButton" name="btn_returnLogin2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	color: #226FA1;
+	background-color: rgb(230, 230, 230);
+	border: none;
+	border-radius: 6px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>返回登录</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_9">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_update">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	color: #ffffff;
+	background-color: #226FA2;
+	border: none;
+	border-radius: 6px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>确认修改</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>账号名：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_account">
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

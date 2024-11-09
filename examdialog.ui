@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExamDialog</class>
+ <widget class="QDialog" name="ExamDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>959</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="1,8" columnstretch="1,4,1">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" colspan="3">
+    <widget class="QWidget" name="widget_5" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 85, 255);</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_19">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>模拟考试界面</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_17">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>剩余时间：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_time">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>00:00</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>100</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_submit">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>交卷</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_3{border-right: 1px solid #000;}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>一、选择题</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget_choice">
+        <property name="cursor" stdset="0">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::NoSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectItems</enum>
+        </property>
+        <property name="rowCount">
+         <number>4</number>
+        </property>
+        <property name="columnCount">
+         <number>5</number>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>40</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>二、填空题</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget_completion">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::NoSelection</enum>
+        </property>
+        <property name="rowCount">
+         <number>4</number>
+        </property>
+        <property name="columnCount">
+         <number>5</number>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>40</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>三、编程题</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget_program">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::NoSelection</enum>
+        </property>
+        <property name="rowCount">
+         <number>4</number>
+        </property>
+        <property name="columnCount">
+         <number>5</number>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>40</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_2{border-left: 1px solid #000;}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1">
+      <item>
+       <widget class="QWidget" name="widget_6" native="true">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_10">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid #fff;
+border-radius: 50px;
+background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resource/user.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="margin">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>姓名：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_16">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>xxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>学号：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_15">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>123456</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>班级：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_14">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>计算机一班</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget#widget{border-top: 1px solid #000;}</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>考生须知：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1.作答选择题时请使用鼠标答题，使用键盘无效。&lt;/p&gt;&lt;p&gt;2.作答填空题时请在系统默认给出的五个输入栏中依次输入答案，多余输入栏请勿输入内容。&lt;/p&gt;&lt;p&gt;3.作答编程题时必须在考生文件夹中对应题号的文件中作答，否则答题无效。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>一、选择题</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_choiceScore">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>(共x题，每题x分)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_choiceDescribe">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="rBtn_A">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>A.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_optionA">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="rBtn_B">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>B.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_optionB">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="rBtn_C">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>C.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_optionC">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="rBtn_D">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>D.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_optionD">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>二、填空题</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_completionScore">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>(共x题，每题x分)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_completionDescribe">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_completion" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_blank1">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_blank2">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_blank3">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_blank4">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_blank5">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_26">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>三、编程题</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_programScore">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>(共x题，每题x分)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_programDescribe">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight">
+           <widget class="QToolButton" name="tBtn_userFolder">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>考生文件夹</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="btn_last">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>上一题</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_next">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>下一题</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
